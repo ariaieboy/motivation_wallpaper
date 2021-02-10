@@ -1,19 +1,74 @@
 {
-	"file" : "motivation.html",
-	"general" : 
-	{
-		"properties" : 
-		{
-			"schemecolor" : 
-			{
-				"order" : 0,
-				"text" : "ui_browse_properties_scheme_color",
-				"type" : "color",
-				"value" : "0 0 0"
-			}
-		}
-	},
-	"title" : "motivation",
-	"type" : "web",
-	"version" : 0
+  "contentrating": "Everyone",
+  "description": "coming soon",
+  "file": "motivation.html",
+  "general": {
+    "properties": {
+      "level": {
+        "options": [
+          {
+            "label": "Year",
+            "value": "Year"
+          },
+          {
+            "label": "Month",
+            "value": "Month"
+          },
+          {
+            "label": "Day",
+            "value": "Day"
+          },
+          {
+            "label": "Hours",
+            "value": "Hours"
+          },
+          {
+            "label": "Minute",
+            "value": "Minute"
+          },
+          {
+            "label": "Second",
+            "value": "Second"
+          }
+        ],
+        "order": 3,
+        "text": "Show Level",
+        "type": "combo",
+        "value": "Minute"
+      },
+      "day": {
+        "editable": true,
+        "fraction": false,
+        "max": 30,
+        "min": 1,
+        "order": 2,
+        "text": "Day",
+        "type": "slider",
+        "value": 30
+      },
+      "month": {
+        "editable": true,
+        "fraction": false,
+        "max": 12,
+        "min": 1,
+        "order": 1,
+        "text": "Month",
+        "type": "slider",
+        "value": 1
+      },
+      "year": {
+        "editable": true,
+        "fraction": false,
+        "max": 2100,
+        "min": 1900,
+        "order": 0,
+        "text": "year",
+        "type": "slider",
+        "value": 1998
+      }
+    }
+  },
+  "title": "Motivation Wallpaper",
+  "type": "web",
+  "version": 0
 }

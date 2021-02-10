@@ -22,6 +22,13 @@ window.wallpaperPropertyListener = {
 
 function boot() {
     changeWallpaper();
+    window.wallpaperInterval = setInterval(() => {
+        let str = humanizeDuration(moment.duration(moment().diff(window.dateObj)), {
+            units: ['y', 'mo', 'd', 'h', 'm'],
+            round: true
+        })
+        document.getElementById('ageCounter').innerText = str;
+    }, 500);
 }
 
 function changeWallpaper() {
@@ -29,5 +36,8 @@ function changeWallpaper() {
     document.body.style.background = `url("${imageUrl}"), linear-gradient(to right, #232526, #414345)`;
     let image = document.createElement('img');
     image.src = imageUrl;
-    image.onload = () => document.getElementById('loader').style.display = "none";
+    image.onload = () => {
+        document.getElementById('loader').style.display = "none";
+        document.getElementById('ageCounter').style.display = "block";
+    };
 }

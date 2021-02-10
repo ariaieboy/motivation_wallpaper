@@ -2,6 +2,25 @@ body {
     background-size: cover;
 }
 
+.age-counter {
+    display: none;
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: rgba(167, 167, 167, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    mix-blend-mode: difference;
+    filter: drop-shadow(.05em .05em #988f8f);
+}
+
 /* spinner from : https://github.com/tobiasahlin/SpinKit*/
 .sk-chase {
     width: 40px;
